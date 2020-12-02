@@ -12,6 +12,8 @@ on:
 
   # Run tests for any PRs.
   pull_request:
+  schedule:
+    - cron:  '0 0 * * 0' # At 00:00 on Sunday. https://crontab.guru/every-week
 
 env:
   IMAGE_NAME: ubuntu-ultimate
