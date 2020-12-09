@@ -11,6 +11,8 @@ apt install -y build-essential # gcc, g++, libc-dev, ...
 apt install -y iputils-ping # ping
 apt install -y dnsutils # dig, nslookup, nsupdate
 apt install -y net-tools # arp, ifconfig, netstat, rarp, nameif et route
+apt install -y apache2-utils # htpasswd
+apt install -y uuid-runtime # uuidgen
 
 # Python + its package manager
 apt install -y python3 python3-pip
