@@ -16,9 +16,10 @@ apt install -y uuid-runtime # uuidgen
 
 # Python + its package manager
 apt install -y python3 python3-pip
+pip3 install yq j2cli
 # python -> bind to python
 update-alternatives --install /usr/bin/python python /usr/bin/python3 1
-update-alternatives --install /usr/bin/python pip /usr/bin/pip3 1
+update-alternatives --install /usr/bin/pip pip /usr/bin/pip3 1
 
 # NodeJS + npm
 wget -qO- https://deb.nodesource.com/setup_lts.x | bash -
