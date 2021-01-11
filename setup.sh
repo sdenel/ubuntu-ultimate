@@ -3,7 +3,7 @@ export DEBIAN_FRONTEND=noninteractive
 
 apt update && apt upgrade -y
 
-apt install -y curl wget vim git htop openssh-client apt-utils
+apt install -y curl wget vim git htop openssh-client apt-utils zip
 
 apt install -y jq # Nice to to play with json in your terminal
 apt install -y htop # A must have replacement for top
@@ -34,3 +34,8 @@ apt install -y ansible
 ansible-galaxy collection install ansible.posix
 
 # TODO: some dependancies here might be interesting: https://github.com/sdenel/docker-ubuntu-kubectl/blob/master/Dockerfile
+
+# AWS2 cli. See https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-linux.html#cliv2-linux-install
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+./aws/install
